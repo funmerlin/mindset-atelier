@@ -606,6 +606,31 @@
 	font-weight: 600;
 }
 
+.pull-quote {
+	font-family: var(--font-heading);
+	font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+	font-weight: 300;
+	font-style: italic;
+	line-height: 1.6;
+	color: var(--color-warm-white);
+	max-width: 700px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 0 1rem;
+}
+
+.pull-quote cite {
+	display: block;
+	font-family: var(--font-sans);
+	font-size: 0.85rem;
+	font-style: normal;
+	font-weight: 600;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	margin-top: 1rem;
+	opacity: 0.7;
+}
+
 @media (max-width: 1024px) {
 	.footer__grid,
 	.values-grid {
