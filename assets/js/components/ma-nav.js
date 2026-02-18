@@ -23,8 +23,8 @@ class MaNav extends HTMLElement {
 					<div class="nav__menu" data-nav-menu>
 						<div class="nav__links">
 							<a href="/">Home</a>
-							<a href="/individuals/">For Individuals</a>
-							<a href="/organisations/">For Organisations</a>
+							<a href="/individuals/">Individuals</a>
+							<a href="/organisations/">Organisations</a>
 							<a href="/about.html">About</a>
 							<a href="/blog/">Blog</a>
 							<a href="/contact.html">Contact</a>
