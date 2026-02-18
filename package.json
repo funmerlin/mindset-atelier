@@ -1,0 +1,9 @@
+{
+	"name": "mindset-atelier",
+	"version": "1.0.0",
+	"description": "Mindset Atelier coaching website",
+	"scripts": {
+		"dev": "npx serve . -p 3000",
+		"build": "echo 'Static site - no build step required'"
+	}
+}
