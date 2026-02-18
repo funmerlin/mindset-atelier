@@ -4,6 +4,7 @@
 
 body {
 	font-family: var(--font-sans);
+	font-weight: 400;
 	color: var(--color-dark);
 	background: var(--color-cream);
 	line-height: 1.7;
@@ -61,7 +62,8 @@ main {
 .eyebrow {
 	font-family: var(--font-sans);
 	text-transform: uppercase;
-	letter-spacing: 0.2em;
+	font-weight: 700;
+	letter-spacing: 0.15em;
 	font-size: 0.75rem;
 	display: block;
 	margin-bottom: 1rem;
@@ -78,7 +80,7 @@ main {
 h1,
 h2 {
 	font-family: var(--font-heading);
-	font-weight: 400;
+	font-weight: 600;
 	line-height: 1.1;
 }
 
@@ -106,7 +108,7 @@ h3 {
 
 .accent {
 	font-family: var(--font-accent);
-	font-style: italic;
+	font-style: normal;
 }
 
 .btn {
@@ -287,6 +289,7 @@ h3 {
 /* Hero headline boost */
 .hero h1 {
 	font-size: clamp(4.5rem, 9vw, 9rem);
+	font-weight: 300;
 	letter-spacing: 0.12em;
 }
 

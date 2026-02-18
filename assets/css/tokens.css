@@ -8,9 +8,10 @@
 	--color-sage-light: #E8F0EE;
 	--color-sage-dark: #5A7D7A;
 
-	--font-heading: 'Cormorant Garamond', Georgia, serif;
-	--font-sans: 'DM Sans', system-ui, sans-serif;
-	--font-accent: 'Playfair Display', Georgia, serif;
+	/* Avenir native (macOS/iOS) → Raleway (Google Fonts) → system sans fallback */
+	--font-heading: 'Avenir Next', 'Avenir', 'Raleway', sans-serif;
+	--font-sans: 'Avenir Next', 'Avenir', 'Raleway', sans-serif;
+	--font-accent: 'Sacramento', cursive;
 
 	--space-1: 0.5rem;
 	--space-2: 1rem;
