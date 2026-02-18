@@ -1,0 +1,130 @@
+Build the complete Mindset Atelier website. Read SPEC.md fully first — it is your complete specification.
+
+## Context
+
+You are building a static multi-page coaching website for Lisa Dullnig (Mindset Atelier). The CSS foundation already exists in assets/css/ (reset.css, tokens.css, styles.css). All images are already in assets/images/. Your job is to complete the CSS and create all HTML pages.
+
+## Tech stack (non-negotiable)
+
+- MPA (Multi Page Application) — one real HTML file per page
+- Plain CSS — no Tailwind, no frameworks
+- Tabs for indentation (width 4)  
+- Vanilla JS only (mobile nav + scroll state)
+- No React, Vue, Svelte, Angular, or any JS framework
+- Cloudflare Pages compatible static output
+
+## What to build
+
+Create these files (all paths relative to project root):
+
+HTML files:
+- index.html (Homepage — dual B2C/B2B)
+- about.html (Lisa's story, values, credentials)
+- individuals/index.html (B2C hub)
+- individuals/stagnation-to-strength.html
+- individuals/family-system.html  
+- individuals/grief-and-crises.html
+- individuals/leadership-growth.html
+- organisations/index.html (B2B hub — The Forensic Lens)
+- organisations/business-scan.html
+- organisations/executive-coaching.html
+- organisations/team-training.html
+- contact.html
+- blog/index.html
+- blog/forensic-lens-case-01.html
+
+Other files:
+- assets/css/components.css (full component styles — nav, hero, cards, testimonials, forms, etc.)
+- assets/js/main.js (mobile nav toggle + scroll state only)
+- package.json (with "dev": "npx serve . -p 3000" script)
+- wrangler.toml
+- _headers
+
+## Complete styles.css
+
+The existing styles.css has a good start. Add to it:
+- Typography (h1–h4 using --font-heading, labels, body)
+- Button styles (.btn-primary, .btn-outline, .btn-coral)
+- Section label (.section-label — small uppercase, sage)
+- Quote blocks (.quote-block)
+- Grid utilities (.grid-2, .grid-3, .grid-4)
+- Responsive breakpoints
+
+## Key design requirements
+
+Colors (already in tokens.css):
+- --color-sage: #7B9E97 (primary, section backgrounds)
+- --color-coral: #C97272 (accent sections, CTAs)
+- --color-cream: #F9F5EF (page background)
+- --color-dark: #2A2A28 (text, footer)
+
+Fonts (Google Fonts via link):
+- Cormorant Garamond (400, 400i, 600) — headlines, pull quotes
+- DM Sans (300, 400, 500) — body, navigation
+- Playfair Display (400i) — accent/signature
+
+Visual principles:
+- Wide letter-spacing on section labels (0.2em uppercase)
+- Cormorant Garamond for all H1/H2 (elegant, large)
+- Generous white space — 5rem section padding on desktop
+- Full-width colored bands (sage/coral/cream) between sections
+- Nature-inspired, warm, grounded feel
+
+## Navigation (appears on ALL pages)
+
+Logo (logo.png) left, links center, "Book a Free Clarity Session" CTA right.
+Links: Home | For Individuals | For Organisations | About | Blog | Contact
+Mobile: hamburger → full-screen overlay
+Sticky with transparent-to-solid-white on scroll.
+
+## Footer (appears on ALL pages)
+
+Dark background. Logo, nav links, Instagram. Legal: Imprint · Privacy Policy · Terms & Conditions.
+"© 2026 Mindset Atelier · Lisa Dullnig"
+
+## Content
+
+ALL content is in SPEC.md. Use it verbatim. Do not invent or summarize content — use the actual text.
+
+Key facts about Lisa from SPEC.md to weave in:
+- Former criminal police investigator (homicide, cybercrime, white-collar crime)
+- 3rd generation investigator
+- Now applies forensic thinking to coaching ("I examine not crime scenes, but the invisible patterns...")
+- Qualifications: Positive Psychology Trainer, PERMA-Lead, NLP Trainer, Life & Social Counsellor, Constellation Facilitator
+
+## Image paths
+
+From root pages (index.html, about.html, etc.): assets/images/filename.jpg
+From subdirectory pages (individuals/*.html, organisations/*.html, blog/*.html): ../assets/images/filename.jpg
+
+Available images:
+- logo.png — logo with teal watercolor splash
+- hero-bg.jpg — mountain landscape
+- nature-bg.jpg — panoramic landscape
+- lisa-portrait.jpg — Lisa professional portrait
+- lisa-photo.jpg — Lisa casual photo
+- lisa-small.png — Lisa small/profile photo
+- lisa-bg.jpg — Lisa page background
+- category-lionesses.jpg — empowerment (growth package)
+- category-family.jpg — family system
+- category-mountains.jpg — grief/crises
+- category-compass.jpg — leadership
+
+## Quality bar
+
+- Fully responsive: 375px mobile to 1440px desktop
+- All images: width + height attributes, loading="lazy" (except hero: fetchpriority="high")
+- Semantic HTML: proper h1–h4 hierarchy, one h1 per page
+- All forms have proper <label> elements (not just placeholders)
+- Meta title + description on every page
+- Open Graph tags on every page
+- @view-transition { navigation: auto; } in CSS for smooth page transitions
+- CSS View Transitions API for inter-page navigation
+- Keyboard accessible: focus styles visible, interactive elements reachable by Tab
+
+## Start building
+
+Read SPEC.md completely, then build all files. Make it beautiful, polished, and complete. This is a professional coaching website for a serious practitioner.
+
+When completely finished with ALL files, run:
+openclaw system event --text "Done: Mindset Atelier website complete — all pages built and ready for review" --mode now

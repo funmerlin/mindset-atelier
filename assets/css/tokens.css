@@ -1,0 +1,36 @@
+:root {
+	--color-sage: #7B9E97;
+	--color-coral: #C97272;
+	--color-cream: #F9F5EF;
+	--color-dark: #2A2A28;
+	--color-warm-white: #FDFAF7;
+	--color-terracotta: #B86B4E;
+	--color-sage-light: #E8F0EE;
+	--color-sage-dark: #5A7D7A;
+
+	--font-heading: 'Cormorant Garamond', Georgia, serif;
+	--font-sans: 'DM Sans', system-ui, sans-serif;
+	--font-accent: 'Playfair Display', Georgia, serif;
+
+	--space-1: 0.5rem;
+	--space-2: 1rem;
+	--space-3: 1.5rem;
+	--space-4: 2rem;
+	--space-5: 3rem;
+	--space-6: 5rem;
+	--space-7: 7rem;
+
+	--radius-sm: 0.25rem;
+	--radius-md: 0.5rem;
+
+	--shadow-soft: 0 18px 40px rgba(0, 0, 0, 0.12);
+	--shadow-card: 0 10px 24px rgba(42, 42, 40, 0.12);
+	--shadow-hover: 0 20px 40px rgba(42, 42, 40, 0.18);
+
+	--max-width: 70rem;
+	--transition-base: 200ms ease;
+}
+
+@view-transition {
+	navigation: auto;
+}
