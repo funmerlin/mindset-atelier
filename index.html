@@ -28,7 +28,16 @@
 				<a href="/contact.html">Contact</a>
 			</div>
 			<div class="nav__meta">
-				<button class="lang-toggle" type="button" aria-label="Language toggle">EN | DE</button>
+				<div class="lang-toggle" role="group" aria-label="Language">
+					<button class="lang-toggle__btn lang-toggle__btn--active" data-lang="en" aria-pressed="true">
+						<span class="lang-toggle__flag">🇬🇧</span>
+						<span class="lang-toggle__label">EN</span>
+					</button>
+					<button class="lang-toggle__btn" data-lang="de" aria-pressed="false">
+						<span class="lang-toggle__flag">🇦🇹</span>
+						<span class="lang-toggle__label">DE</span>
+					</button>
+				</div>
 				<a class="btn btn-primary nav__cta" href="/contact.html">Free Clarity Session</a>
 			</div>
 		</div>
@@ -105,7 +114,7 @@
 		<section class="section testimonial">
 			<div class="container testimonial__content">
 				<p class="quote">“With her appreciative, honest and clear attitude, Lisa has become a competent companion for me in all aspects of my life. She supports me and reflects with me on my strengths and weaknesses, always with the aim of leading a self-determined and happy life.”</p>
-				<p class="quote__attr">— satisfied client</p>
+				<p class="quote__attr">— Anna U.</p>
 			</div>
 		</section>
 
@@ -165,9 +174,12 @@
 				<div>
 					<h2>Feel free to write me a message...</h2>
 					<form class="form form--dark" action="#">
-						<input type="text" name="name" placeholder="Your name" required>
-						<input type="email" name="email" placeholder="Email address" required>
-						<textarea name="message" placeholder="Your message" required></textarea>
+						<label for="h-name">Name</label>
+						<input id="h-name" type="text" name="name" required>
+						<label for="h-email">Email</label>
+						<input id="h-email" type="email" name="email" required>
+						<label for="h-msg">Message</label>
+						<textarea id="h-msg" name="message" required></textarea>
 						<button class="btn btn-primary" type="submit">Send Message</button>
 						<small>Forms are for display only.</small>
 					</form>
@@ -175,10 +187,23 @@
 				<div>
 					<h2>...or just leave me your phone number and I'll call you.</h2>
 					<form class="form form--dark" action="#">
-						<input type="text" name="name" placeholder="Your name" required>
+						<label for="h-cname">Name</label>
+						<input id="h-cname" type="text" name="name" required>
 						<div class="grid" style="grid-template-columns: 120px 1fr; gap: 1rem;">
-							<input type="text" name="country" placeholder="Code" required>
-							<input type="tel" name="phone" placeholder="Phone number" required>
+							<div>
+								<label for="h-code">Country</label>
+								<select id="h-code" name="country">
+									<option>+43</option>
+									<option>+49</option>
+									<option>+41</option>
+									<option>+44</option>
+									<option>+31</option>
+								</select>
+							</div>
+							<div>
+								<label for="h-phone">Phone</label>
+								<input id="h-phone" type="tel" name="phone" required>
+							</div>
 						</div>
 						<button class="btn btn-outline" type="submit">Request Callback</button>
 						<small>Forms are for display only.</small>

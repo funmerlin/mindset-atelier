@@ -7,6 +7,7 @@
 	color: var(--color-warm-white);
 	background-size: cover;
 	background-position: center;
+	padding-bottom: 8rem;
 }
 
 .hero::before {
@@ -26,6 +27,11 @@
 
 .hero--sage::before {
 	display: none;
+}
+
+.page-hero {
+	padding: 8rem 0 5rem;
+	min-height: 280px;
 }
 
 .hero__content {
@@ -98,9 +104,10 @@
 }
 
 .nav__links a {
-	font-size: 0.83rem;
+	padding: 0.4rem 0.5rem;
+	font-size: 0.9rem;
 	text-transform: uppercase;
-	letter-spacing: 0.06em;
+	letter-spacing: 0.03em;
 	font-weight: 600;
 }
 
@@ -113,16 +120,6 @@
 .nav__cta {
 	padding: 0.58rem 1rem;
 	font-size: 0.72rem;
-}
-
-.lang-toggle {
-	border: 1px solid rgba(42, 42, 40, 0.24);
-	background: transparent;
-	padding: 0.48rem 0.66rem;
-	font-size: 0.7rem;
-	letter-spacing: 0.08em;
-	text-transform: uppercase;
-	border-radius: var(--radius-sm);
 }
 
 .nav__toggle {
@@ -151,6 +148,7 @@
 	display: flex;
 	flex-direction: column;
 	transition: transform var(--transition-base), box-shadow var(--transition-base);
+	padding: 2rem;
 }
 
 .card:hover {
@@ -162,10 +160,11 @@
 	width: 100%;
 	aspect-ratio: 4 / 3;
 	object-fit: cover;
+	margin: -2rem -2rem 1.5rem;
+	width: calc(100% + 4rem);
 }
 
 .card__body {
-	padding: 1.4rem;
 	display: grid;
 	gap: 0.7rem;
 }
@@ -246,6 +245,21 @@
 .form--dark input::placeholder,
 .form--dark textarea::placeholder {
 	color: rgba(255, 255, 255, 0.8);
+}
+
+.form--dark label {
+	display: block;
+	font-size: 0.8rem;
+	font-weight: 500;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color: rgba(255, 255, 255, 0.85);
+	margin-bottom: 0.3rem;
+	margin-top: 1rem;
+}
+
+.form--dark label:first-child {
+	margin-top: 0;
 }
 
 /* Values */

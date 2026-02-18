@@ -33,7 +33,16 @@
 				<a href="/contact.html">Contact</a>
 			</div>
 			<div class="nav__meta">
-				<button class="lang-toggle" type="button" aria-label="Language toggle">EN | DE</button>
+				<div class="lang-toggle" role="group" aria-label="Language">
+					<button class="lang-toggle__btn lang-toggle__btn--active" data-lang="en" aria-pressed="true">
+						<span class="lang-toggle__flag">🇬🇧</span>
+						<span class="lang-toggle__label">EN</span>
+					</button>
+					<button class="lang-toggle__btn" data-lang="de" aria-pressed="false">
+						<span class="lang-toggle__flag">🇦🇹</span>
+						<span class="lang-toggle__label">DE</span>
+					</button>
+				</div>
 				<a class="btn btn-primary nav__cta" href="/contact.html">Free Clarity Session</a>
 			</div>
 		</div>

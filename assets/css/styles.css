@@ -19,7 +19,7 @@ main {
 }
 
 .section {
-	padding: var(--space-6) 0;
+	padding: 7rem 0;
 }
 
 .section--tight {
@@ -39,6 +39,14 @@ main {
 .section--coral {
 	background: var(--color-coral);
 	color: var(--color-warm-white);
+}
+
+.section--coral h2 {
+	margin-bottom: 2rem;
+}
+
+.section--coral .form {
+	margin-top: 1.5rem;
 }
 
 .section--cream {
@@ -86,6 +94,10 @@ h3 {
 	font-family: var(--font-sans);
 	font-size: 1.1rem;
 	font-weight: 600;
+}
+
+.section__header {
+	margin-bottom: 3.5rem;
 }
 
 .lead {
@@ -221,6 +233,75 @@ h3 {
 	background: rgba(255, 255, 255, 0.15);
 	border-color: white;
 	color: white;
+}
+
+/* Button overrides inside coral sections */
+.section--coral .btn-outline {
+	border-color: rgba(255, 255, 255, 0.8);
+	color: white;
+}
+.section--coral .btn-outline:hover {
+	background: rgba(255, 255, 255, 0.2);
+	border-color: white;
+	color: white;
+}
+
+.section--coral .btn-primary {
+	background: white;
+	color: var(--color-coral);
+	border-color: white;
+}
+.section--coral .btn-primary:hover {
+	background: var(--color-warm-white);
+	border-color: var(--color-warm-white);
+}
+
+.lang-toggle {
+	display: flex;
+	align-items: center;
+	gap: 0;
+	border: 1px solid var(--color-sage);
+	border-radius: 4px;
+	overflow: hidden;
+}
+
+.lang-toggle__btn {
+	display: flex;
+	align-items: center;
+	gap: 0.3em;
+	padding: 0.3rem 0.6rem;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	font-family: var(--font-sans);
+	font-size: 0.8rem;
+	font-weight: 500;
+	color: var(--color-dark);
+	letter-spacing: 0.05em;
+	transition: background 0.2s, color 0.2s;
+}
+
+.lang-toggle__btn + .lang-toggle__btn {
+	border-left: 1px solid var(--color-sage);
+}
+
+.lang-toggle__btn--active {
+	background: var(--color-sage);
+	color: white;
+}
+
+.lang-toggle__btn:hover:not(.lang-toggle__btn--active) {
+	background: var(--color-sage-light);
+}
+
+.lang-toggle__flag {
+	font-size: 1rem;
+	line-height: 1;
+}
+
+.lang-toggle__label {
+	font-size: 0.75rem;
+	font-weight: 600;
 }
 /* Hero headline boost */
 .hero h1 {
