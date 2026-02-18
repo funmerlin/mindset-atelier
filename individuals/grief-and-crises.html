@@ -14,42 +14,10 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="../assets/css/styles.css">
-	<script src="../assets/js/main.js" defer></script>
+	<script type="module" src="/assets/js/main.js"></script>
 </head>
 <body>
-<nav class="nav" aria-label="Primary">
-	<div class="container nav__inner">
-		<a class="nav__logo" href="/">
-			<img src="../assets/images/logo.png" alt="Mindset Atelier">
-			<span class="sr-only">Mindset Atelier</span>
-		</a>
-		<div class="nav__menu" data-nav-menu>
-			<div class="nav__links">
-				<a href="/">Home</a>
-				<a href="/individuals/">For Individuals</a>
-				<a href="/organisations/">For Organisations</a>
-				<a href="/about.html">About</a>
-				<a href="/blog/">Blog</a>
-				<a href="/contact.html">Contact</a>
-			</div>
-			<div class="nav__meta">
-				<div class="lang-select">
-					<select class="lang-select__control" aria-label="Select language" id="lang-select">
-						<option value="en" selected>🇬🇧 EN</option>
-						<option value="de">🇦🇹 DE</option>
-						<option value="nl" disabled>🇳🇱 NL</option>
-					</select>
-				</div>
-				<a class="btn btn-primary nav__cta" href="/contact.html">Free Clarity Session</a>
-			</div>
-		</div>
-		<button class="nav__toggle" type="button" data-nav-toggle aria-label="Toggle navigation" aria-expanded="false">
-			<span></span>
-			<span></span>
-			<span></span>
-		</button>
-	</div>
-</nav>
+<ma-nav active="individuals"></ma-nav>
 
 	<header class="hero hero--short" style="background-image:url('../assets/images/category-mountains.jpg');">
 		<div class="container hero__content">
@@ -72,43 +40,6 @@
 		<section class="section section--warm"><div class="container"><h2>What We Do Together</h2><p>Grief can have many faces. Letting it go can create a hugely positive turnaround in your life. Together we create emotional relief, practical orientation, and grounded next steps so you can move from survival mode to meaningful momentum.</p></div></section>
 		<section class="section section--cream"><div class="container"><h2>The Process</h2><div class="process"><article class="process__step"><span>1</span><h3>Clarity</h3><p>We uncover core patterns and define the real challenge.</p></article><article class="process__step"><span>2</span><h3>Action</h3><p>We choose practical interventions aligned with your life context.</p></article><article class="process__step"><span>3</span><h3>Growth</h3><p>You anchor sustainable behaviours and own your next level.</p></article></div><p style="margin-top:1.2rem;"><a class="btn btn-primary" href="/contact.html">Book a Free Clarity Session →</a></p><a class="link-arrow" href="/individuals/">← Back to All Coaching Areas</a></div></section>
 	</main>
-<footer class="footer">
-	<div class="container footer__grid">
-		<div>
-			<a class="footer__logo" href="/">
-				<img src="../assets/images/logo.png" alt="Mindset Atelier logo" width="2203" height="714" loading="lazy">
-				<span>Mindset Atelier</span>
-			</a>
-			<p class="lead">Create Opportunities. Unfold Your Potential.</p>
-		</div>
-		<div class="footer__links">
-			<a href="/individuals/">For Individuals</a>
-			<a href="/organisations/">For Organisations</a>
-			<a href="/about.html">About</a>
-			<a href="/blog/">Blog</a>
-			<a href="/contact.html">Contact</a>
-		</div>
-		<div class="footer__links">
-			<a href="mailto:lisa@mindsetatelier.com">lisa@mindsetatelier.com</a>
-			<span>Vienna · Austria</span>
-			<span>Coaching & Training</span>
-		</div>
-		<div>
-			<div class="footer__social">
-				<span>Instagram</span>
-				<a href="https://www.instagram.com/mindsetatelier/" aria-label="Mindset Atelier on Instagram">@mindsetatelier</a>
-			</div>
-			<div class="footer__legal">
-				<a href="/imprint.html">Imprint</a>
-				<a href="/privacy.html">Privacy</a>
-				<a href="/terms.html">T&C</a>
-			</div>
-		</div>
-	</div>
-	<div class="container footer__bottom">
-		<span>© 2026 Mindset Atelier · Lisa Dullnig</span>
-		<span>Mindset Atelier · Create Opportunities. Unfold Your Potential.</span>
-	</div>
-</footer>
+<ma-footer></ma-footer>
 </body>
 </html>

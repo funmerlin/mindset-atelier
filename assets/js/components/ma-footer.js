@@ -1,0 +1,46 @@
+class MaFooter extends HTMLElement {
+	connectedCallback() {
+		this.innerHTML = `
+			<footer class="footer">
+				<div class="container footer__grid">
+					<div>
+						<a class="footer__logo" href="/">
+							<img src="/assets/images/logo.png" alt="Mindset Atelier logo" width="2203" height="714">
+							<span>Mindset Atelier</span>
+						</a>
+						<p class="lead">Create Opportunities. Unfold Your Potential.</p>
+					</div>
+					<div class="footer__links">
+						<a href="/individuals/">For Individuals</a>
+						<a href="/organisations/">For Organisations</a>
+						<a href="/about.html">About</a>
+						<a href="/blog/">Blog</a>
+						<a href="/contact.html">Contact</a>
+					</div>
+					<div class="footer__links">
+						<a href="mailto:lisa@mindsetatelier.com">lisa@mindsetatelier.com</a>
+						<span>Vienna · Austria</span>
+						<span>Coaching & Training</span>
+					</div>
+					<div>
+						<div class="footer__social">
+							<span>Instagram</span>
+							<a href="https://www.instagram.com" aria-label="Mindset Atelier on Instagram">@mindsetatelier</a>
+						</div>
+						<div class="footer__legal">
+							<a href="/imprint.html">Imprint</a>
+							<a href="/privacy.html">Privacy</a>
+							<a href="/terms.html">T&C</a>
+						</div>
+					</div>
+				</div>
+				<div class="container footer__bottom">
+					<span>© 2026 Mindset Atelier · Lisa Dullnig</span>
+					<span>Mindset Atelier · Create Opportunities. Unfold Your Potential.</span>
+				</div>
+			</footer>
+		`;
+	}
+}
+
+customElements.define('ma-footer', MaFooter);
