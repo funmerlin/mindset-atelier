@@ -20,8 +20,8 @@
 <nav class="nav" aria-label="Primary">
 	<div class="container nav__inner">
 		<a class="nav__logo" href="/">
-			<img src="/assets/images/logo.png" alt="Mindset Atelier logo" width="2203" height="714">
-			<span>Mindset Atelier</span>
+			<img src="/assets/images/logo.png" alt="Mindset Atelier">
+			<span class="sr-only">Mindset Atelier</span>
 		</a>
 		<div class="nav__menu" data-nav-menu>
 			<div class="nav__links">
@@ -33,15 +33,12 @@
 				<a href="/contact.html">Contact</a>
 			</div>
 			<div class="nav__meta">
-				<div class="lang-toggle" role="group" aria-label="Language">
-					<button class="lang-toggle__btn lang-toggle__btn--active" data-lang="en" aria-pressed="true">
-						<span class="lang-toggle__flag">🇬🇧</span>
-						<span class="lang-toggle__label">EN</span>
-					</button>
-					<button class="lang-toggle__btn" data-lang="de" aria-pressed="false">
-						<span class="lang-toggle__flag">🇦🇹</span>
-						<span class="lang-toggle__label">DE</span>
-					</button>
+				<div class="lang-select">
+					<select class="lang-select__control" aria-label="Select language" id="lang-select">
+						<option value="en" selected>🇬🇧 EN</option>
+						<option value="de">🇦🇹 DE</option>
+						<option value="nl" disabled>🇳🇱 NL</option>
+					</select>
 				</div>
 				<a class="btn btn-primary nav__cta" href="/contact.html">Free Clarity Session</a>
 			</div>
@@ -67,19 +64,42 @@
 				<div>
 					<h2>Write Me a Message</h2>
 					<form class="form form--dark" action="#">
-						<label for="m-name">Name</label><input id="m-name" type="text" name="name" required>
-						<label for="m-email">Email</label><input id="m-email" type="email" name="email" required>
-						<label for="m-msg">Message</label><textarea id="m-msg" name="message" required></textarea>
+						<div class="form-group">
+							<label for="m-name">Name</label>
+							<input id="m-name" type="text" name="name" required>
+						</div>
+						<div class="form-group">
+							<label for="m-email">Email</label>
+							<input id="m-email" type="email" name="email" required>
+						</div>
+						<div class="form-group">
+							<label for="m-msg">Message</label>
+							<textarea id="m-msg" name="message" required></textarea>
+						</div>
 						<button class="btn btn-primary" type="submit">Send Message</button>
 					</form>
 				</div>
 				<div>
 					<h2>...or just leave me your phone number and I'll call you.</h2>
 					<form class="form form--dark" action="#">
-						<label for="c-name">Name</label><input id="c-name" type="text" name="name" required>
+						<div class="form-group">
+							<label for="c-name">Name</label>
+							<input id="c-name" type="text" name="name" required>
+						</div>
 						<div class="grid" style="grid-template-columns:130px 1fr;gap:1rem;">
-							<div><label for="c-code">Country</label><select id="c-code" name="country"><option>+43</option><option>+49</option><option>+41</option><option>+44</option></select></div>
-							<div><label for="c-phone">Phone</label><input id="c-phone" type="tel" name="phone" required></div>
+							<div class="form-group">
+								<label for="c-code">Country</label>
+								<select id="c-code" name="country">
+									<option>+43</option>
+									<option>+49</option>
+									<option>+41</option>
+									<option>+44</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<label for="c-phone">Phone</label>
+								<input id="c-phone" type="tel" name="phone" required>
+							</div>
 						</div>
 						<button class="btn btn-outline" type="submit">Call Me</button>
 					</form>

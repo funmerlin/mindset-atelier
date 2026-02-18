@@ -27,3 +27,11 @@ scrollLinks.forEach((link) => {
 		}
 	});
 });
+
+const langSelect = document.getElementById('lang-select');
+if (langSelect) {
+	langSelect.addEventListener('change', (event) => {
+		// Language switching not yet implemented — placeholder
+		console.log('Language selected:', event.target.value);
+	});
+}

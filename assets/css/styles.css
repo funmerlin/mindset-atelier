@@ -256,52 +256,33 @@ h3 {
 	border-color: var(--color-warm-white);
 }
 
-.lang-toggle {
-	display: flex;
-	align-items: center;
-	gap: 0;
-	border: 1px solid var(--color-sage);
-	border-radius: 4px;
-	overflow: hidden;
+/* Language select */
+.lang-select {
+	position: relative;
 }
 
-.lang-toggle__btn {
-	display: flex;
-	align-items: center;
-	gap: 0.3em;
-	padding: 0.3rem 0.6rem;
+.lang-select__control {
+	appearance: none;
+	-webkit-appearance: none;
 	background: transparent;
-	border: none;
-	cursor: pointer;
+	border: 1px solid var(--color-sage);
+	border-radius: 4px;
+	padding: 0.3rem 1.8rem 0.3rem 0.6rem;
 	font-family: var(--font-sans);
 	font-size: 0.8rem;
 	font-weight: 500;
 	color: var(--color-dark);
-	letter-spacing: 0.05em;
-	transition: background 0.2s, color 0.2s;
+	cursor: pointer;
+	line-height: 1.4;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%237B9E97'/%3E%3C/svg%3E");
+	background-repeat: no-repeat;
+	background-position: right 0.5rem center;
+	background-size: 8px;
 }
 
-.lang-toggle__btn + .lang-toggle__btn {
-	border-left: 1px solid var(--color-sage);
-}
-
-.lang-toggle__btn--active {
-	background: var(--color-sage);
-	color: white;
-}
-
-.lang-toggle__btn:hover:not(.lang-toggle__btn--active) {
-	background: var(--color-sage-light);
-}
-
-.lang-toggle__flag {
-	font-size: 1rem;
-	line-height: 1;
-}
-
-.lang-toggle__label {
-	font-size: 0.75rem;
-	font-weight: 600;
+.lang-select__control:focus {
+	outline: 2px solid var(--color-sage);
+	outline-offset: 2px;
 }
 /* Hero headline boost */
 .hero h1 {
@@ -324,4 +305,17 @@ h3 {
 .section--dark .value-card p,
 .section--coral .value-card p {
 	color: var(--color-text-muted, #555);
+}
+
+/* Utilities */
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
 }

@@ -20,8 +20,8 @@
 <nav class="nav" aria-label="Primary">
 	<div class="container nav__inner">
 		<a class="nav__logo" href="/">
-			<img src="../assets/images/logo.png" alt="Mindset Atelier logo" width="2203" height="714">
-			<span>Mindset Atelier</span>
+			<img src="../assets/images/logo.png" alt="Mindset Atelier">
+			<span class="sr-only">Mindset Atelier</span>
 		</a>
 		<div class="nav__menu" data-nav-menu>
 			<div class="nav__links">
@@ -33,15 +33,12 @@
 				<a href="/contact.html">Contact</a>
 			</div>
 			<div class="nav__meta">
-				<div class="lang-toggle" role="group" aria-label="Language">
-					<button class="lang-toggle__btn lang-toggle__btn--active" data-lang="en" aria-pressed="true">
-						<span class="lang-toggle__flag">🇬🇧</span>
-						<span class="lang-toggle__label">EN</span>
-					</button>
-					<button class="lang-toggle__btn" data-lang="de" aria-pressed="false">
-						<span class="lang-toggle__flag">🇦🇹</span>
-						<span class="lang-toggle__label">DE</span>
-					</button>
+				<div class="lang-select">
+					<select class="lang-select__control" aria-label="Select language" id="lang-select">
+						<option value="en" selected>🇬🇧 EN</option>
+						<option value="de">🇦🇹 DE</option>
+						<option value="nl" disabled>🇳🇱 NL</option>
+					</select>
 				</div>
 				<a class="btn btn-primary nav__cta" href="/contact.html">Free Clarity Session</a>
 			</div>

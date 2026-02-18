@@ -82,14 +82,11 @@
 	display: inline-flex;
 	align-items: center;
 	gap: 0.75rem;
-	font-family: var(--font-heading);
-	font-size: 1.45rem;
-	color: var(--color-dark);
 }
 
 .nav__logo img {
-	width: 132px;
-	height: auto;
+	height: 52px;
+	width: auto;
 }
 
 .nav__menu {
@@ -247,19 +244,24 @@
 	color: rgba(255, 255, 255, 0.8);
 }
 
-.form--dark label {
-	display: block;
-	font-size: 0.8rem;
-	font-weight: 500;
-	letter-spacing: 0.05em;
-	text-transform: uppercase;
-	color: rgba(255, 255, 255, 0.85);
-	margin-bottom: 0.3rem;
-	margin-top: 1rem;
+.form-group {
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+	margin-bottom: 0.9rem;
 }
 
-.form--dark label:first-child {
-	margin-top: 0;
+.form-group:last-of-type {
+	margin-bottom: 0;
+}
+
+.form--dark label {
+	display: block;
+	font-size: 0.75rem;
+	font-weight: 600;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: rgba(255, 255, 255, 0.75);
 }
 
 /* Values */
